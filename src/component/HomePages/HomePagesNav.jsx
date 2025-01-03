@@ -1,48 +1,51 @@
 import { FiAlignRight } from "react-icons/fi";
+import { IoPerson } from "react-icons/io5";
 function HomePagesNav() {
   
   return (
     <>
-    <div className="navbar bg-[#ca448e] text-white">
+    <div className="navbar bg-[#ca448e] text-[#551447]">
 
         
   <div className="flex-1">
     <a className="btn btn-ghost text-xl">daisyUI</a>
   </div>
   <div className="flex-none">
-  <div className=" md:space-x-20 md:text-2xl md:block hidden lg:mr-[10rem] mr-[3rem]  font-Gupter">
+  <div className=" md:space-x-16 md:text-2xl md:block hidden lg:mr-[2rem] mr-[3rem]  font-Gupter font-semibold">
           <button>Home</button>
           <button>Shop</button>
           <button>About</button>
           <button>Contacts</button>
+          <button className="btn text-xl text-[#551447]">Login</button>
         </div>
+        
   </div>
 
        
 
         {/* mobile view */}
-        <div className="md:hidden z-10">
+        <div className="md:hidden z-10 ">
           <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               {/* Page content here */}
               <label
                 htmlFor="my-drawer"
-                className=" text-3xl text-white drawer-button"
+                className=" text-3xl text-[#551447] drawer-button"
               >
                 <FiAlignRight />
               </label>
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side ">
               <label
                 htmlFor="my-drawer"
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+              <ul className="menu font-Gupter text-2xl  min-h-full w-80 p-4 text-[#551447] bg-pink-100">
                 {/* Sidebar content here */}
                 <li>
-                  <a>Sidebar Item 1</a>
+                  <a>Home</a>
                 </li>
                 <li>
                   <a>Sidebar Item 2</a>
@@ -50,17 +53,6 @@ function HomePagesNav() {
               </ul>
             </div>
           </div>
-       
-
-
-        <div className="md:space-x-10 md:text-xl md:block hidden">
-          <button className="btn hover:bg-black hover:text-white text-black">
-            Sign in
-          </button>
-          <button className="btn bg-black text-white hover:text-black">
-            Sign up
-          </button>
-        </div>
        </div>
        </div>
        

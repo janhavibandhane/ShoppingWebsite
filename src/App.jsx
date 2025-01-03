@@ -15,7 +15,7 @@ function App() {
       <HomePagesNav></HomePagesNav>
       <HomePagesHead></HomePagesHead>
       <HomePagesArtical></HomePagesArtical>
-      {/* <HomePageProduct ></HomePageProduct> */}
+      <HomePageProduct ></HomePageProduct>
     </>
   )
 }
