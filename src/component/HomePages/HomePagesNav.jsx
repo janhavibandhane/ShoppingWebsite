@@ -4,14 +4,14 @@ function HomePagesNav() {
   
   return (
     <>
-    <div className="navbar bg-[#ca448e] text-[#551447]">
+    <div className="navbar sticky top-0 z-50  bg-[#ca448e] text-white">
 
         
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className=" "><img src="https://typsybeauty.com/cdn/shop/files/new-logo-white-st_3_ba2111eb-d044-4682-ab21-3724d4106172.png?v=1723613891&width=210"></img></a>
   </div>
   <div className="flex-none">
-  <div className=" md:space-x-16 md:text-2xl md:block hidden lg:mr-[2rem] mr-[3rem]  font-Gupter font-semibold">
+  <div className=" md:space-x-16 md:text-2xl md:block hidden lg:mr-[2rem] mr-[3rem]  font-Gupter ">
           <button>Home</button>
           <button>Shop</button>
           <button>About</button>
@@ -31,7 +31,7 @@ function HomePagesNav() {
               {/* Page content here */}
               <label
                 htmlFor="my-drawer"
-                className=" text-3xl text-[#551447] drawer-button"
+                className=" text-3xl text-white drawer-button"
               >
                 <FiAlignRight />
               </label>
