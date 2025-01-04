@@ -6,6 +6,7 @@ import HomePagesNav from './component/HomePages/HomePagesNav'
 import HomePagesHead from './component/HomePages/HomePagesHead'
 import HomePagesArtical from './component/HomePages/HomePagesArtical'
 import HomePageProduct from './component/HomePages/HomePagesProduct'
+import HomePagesReview from './component/HomePages/HomePagesReview'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <HomePagesHead></HomePagesHead>
       <HomePagesArtical></HomePagesArtical>
       <HomePageProduct ></HomePageProduct>
+      <HomePagesReview></HomePagesReview>
     </>
   )
 }

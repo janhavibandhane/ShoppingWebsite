@@ -1,27 +1,26 @@
 import { FiAlignRight } from "react-icons/fi";
 import { IoPerson } from "react-icons/io5";
 function HomePagesNav() {
-  
   return (
     <>
-    <div className="navbar sticky top-0 z-50  bg-[#ca448e] text-white">
-
-        
-  <div className="flex-1">
-    <a className=" "><img src="https://typsybeauty.com/cdn/shop/files/new-logo-white-st_3_ba2111eb-d044-4682-ab21-3724d4106172.png?v=1723613891&width=210"></img></a>
-  </div>
-  <div className="flex-none">
-  <div className=" md:space-x-16 md:text-2xl md:block hidden lg:mr-[2rem] mr-[3rem]  font-Gupter ">
-          <button>Home</button>
-          <button>Shop</button>
-          <button>About</button>
-          <button>Contacts</button>
-          <button className="btn text-xl text-[#551447]">Login</button>
+      <div className="navbar sticky top-0 z-50  bg-[#ca448e] text-white">
+        {/* Logo */}
+        <div className="flex-1">
+          <a className=" ">
+            <img src="https://typsybeauty.com/cdn/shop/files/new-logo-white-st_3_ba2111eb-d044-4682-ab21-3724d4106172.png?v=1723613891&width=210"></img>
+          </a>
         </div>
-        
-  </div>
 
-       
+        {/* Options */}
+        <div className="flex-none">
+          <div className=" md:space-x-16 md:text-2xl md:block hidden lg:mr-[2rem] mr-[3rem]  font-Gupter ">
+            <button>Home</button>
+            <button>Shop</button>
+            <button>About</button>
+            <button>Contacts</button>
+            <button className="btn text-xl text-[#551447]">Login</button>
+          </div>
+        </div>
 
         {/* mobile view */}
         <div className="md:hidden z-10 ">
@@ -53,13 +52,10 @@ function HomePagesNav() {
               </ul>
             </div>
           </div>
-       </div>
-       </div>
-       
+        </div>
 
-      
-   
-
+        
+      </div>
     </>
   );
 }

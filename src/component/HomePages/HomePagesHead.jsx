@@ -24,6 +24,8 @@ function HomePagesHead() {
               <img src="https://typsybeauty.com/cdn/shop/files/Accessories_420fbf71-eade-4e05-b3f9-c64815f83de6.jpg?v=1729758068" />
             </div>
           </div>
+
+          
         </div>
      
     </>
