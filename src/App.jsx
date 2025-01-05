@@ -8,7 +8,6 @@ import HomePagesArtical from './component/HomePages/HomePagesArtical'
 import HomePageProduct from './component/HomePages/HomePagesProduct'
 import HomePagesReview from './component/HomePages/HomePagesReview'
 import HomePagesFooter from './component/HomePages/HomePagesFooter'
-import Card from './component/HomePagesReuseableComponents/Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,7 +20,7 @@ function App() {
       <HomePageProduct ></HomePageProduct>
       <HomePagesReview></HomePagesReview>
       <HomePagesFooter />
-      <Card></Card>
+      
     </>
   )
 }

@@ -2,7 +2,7 @@ import HomePageReViewReUseCard from "../HomePagesReuseableComponents/HomePageReV
 function HomePagesReview() {
   return (
     <>
-      <div className=" hero bg-pink-300 flex-col justify-center items-center mt-[-1rem]">
+      <div className=" hero bg-pink-300 flex-col justify-center items-center">
         <div className="text-[#551447] font-bold text-center md:mt-[-26rem] mt-[-20rem]  text-3xl">
           Loved By EveryOne
         </div>
