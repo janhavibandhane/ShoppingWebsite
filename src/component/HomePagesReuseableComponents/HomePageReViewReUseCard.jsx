@@ -1,7 +1,7 @@
 function HomePageReViewReUseCard({item1,item2,item3}) {
   return (
     <>
-      <div className="carousel-item flex flex-col ">
+      <div className="carousel-item flex flex-col shadow-xl">
         <div>
           <img
             src={item1}

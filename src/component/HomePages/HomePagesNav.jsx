@@ -3,7 +3,7 @@ import { IoPerson } from "react-icons/io5";
 function HomePagesNav() {
   return (
     <>
-      <div className="navbar sticky top-0 z-50  bg-[#ca448e] text-white">
+      <div className="navbar sticky top-0 z-50  bg-[#e24298] text-white">
         {/* Logo */}
         <div className="flex-1">
           <a className=" ">
@@ -41,7 +41,7 @@ function HomePagesNav() {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu font-Gupter text-2xl  min-h-full w-80 p-4 text-[#551447] bg-pink-100">
+              <ul className="menu font-Gupter text-2xl  min-h-full w-80 p-4 text-[#551447] bg-[#fee9e6]">
                 {/* Sidebar content here */}
                 <li>
                   <a>Home</a>

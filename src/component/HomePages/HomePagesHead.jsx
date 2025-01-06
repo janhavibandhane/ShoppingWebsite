@@ -2,7 +2,7 @@ import { useEffect } from "react";
 function HomePagesHead() {
   return (
     <>
-      <div className="navbar bg-pink-100 h-[8rem] flex justify-evenly md:p-20">
+      <div className="navbar bg-[#ffd1d1] h-[8rem] flex justify-evenly md:p-20">
         
           <div className="avatar">
             <div className="md:w-24 w-16 rounded-full">
