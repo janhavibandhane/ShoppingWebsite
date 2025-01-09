@@ -2,6 +2,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function HomePagesFooter() {
   const [activeQuestion, setActiveQuestion] = useState(null);
@@ -51,26 +52,34 @@ function HomePagesFooter() {
 
         {/* Images Section */}
         <div className="flex justify-center items-center gap-4 mt-8">
+        <Link to={"/ProductForEyes"}>
           <img
             src="https://typsybeauty.com/cdn/shop/files/Eyes_2_ccaf306d-5286-40d1-a352-da0e6a2701b4.png?v=1730957296"
             className="md:w-36 md:h-36 w-20 h-20"
             alt="Eyes"
           />
+        </Link>  
+        <Link to={"/ProductsBlush"}>
           <img
             src="https://typsybeauty.com/cdn/shop/files/Group_70_1_1.png?v=1730957384"
             className="md:w-36 md:h-36 w-20 h-20"
             alt="Group 70"
           />
+        </Link> 
+        <Link to={"/ProductsLipstick"}>
           <img
             src="https://typsybeauty.com/cdn/shop/files/Lips_264393ef-9c23-4b00-afaa-676b2a8d7ad5.png?v=1730957298"
             className="md:w-36 md:h-36 w-20 h-20"
             alt="Lips"
           />
+          </Link>
+          <Link to={"/ProductBrushes"}>
           <img
             src="https://typsybeauty.com/cdn/shop/files/Value-sets_edeb2e64-7853-449a-84e4-d5cbe521816d.png?v=1730957297"
             className="md:w-36 md:h-36 w-20 h-20"
             alt="Value Sets"
           />
+          </Link>
         </div>
 
         {/* Social Section */}
