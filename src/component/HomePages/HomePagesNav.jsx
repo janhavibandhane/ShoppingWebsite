@@ -1,9 +1,12 @@
 import { FiAlignRight } from "react-icons/fi";
 import { IoPerson } from "react-icons/io5";
+import { IoMdPerson } from "react-icons/io";
+import { FaShoppingBag } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function HomePagesNav() {
   return (
     <>
-      <div className="navbar sticky top-0 z-50  bg-[#ca448e] text-white">
+      <div className="navbar sticky top-0 z-50  bg-[#e24298] text-white">
         {/* Logo */}
         <div className="flex-1">
           <a className=" ">
@@ -13,12 +16,17 @@ function HomePagesNav() {
 
         {/* Options */}
         <div className="flex-none">
-          <div className=" md:space-x-16 md:text-2xl md:block hidden lg:mr-[2rem] mr-[3rem]  font-Gupter ">
+          <div className=" md:text-2xl md:block hidden lg:mr-[2rem] mr-[3rem]  font-Gupter">
+            <div className=" flex  md:space-x-16">
             <button>Home</button>
             <button>Shop</button>
             <button>About</button>
             <button>Contacts</button>
-            <button className="btn text-xl text-[#551447]">Login</button>
+            <div className=" space-x-5">
+            <Link to={'/AddedItem'}><button className="mt-1"><FaShoppingBag /></button></Link>
+            <button className="mt-1"><IoMdPerson /></button>
+            </div>
+            </div>
           </div>
         </div>
 
@@ -41,7 +49,7 @@ function HomePagesNav() {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu font-Gupter text-2xl  min-h-full w-80 p-4 text-[#551447] bg-pink-100">
+              <ul className="menu font-Gupter text-2xl  min-h-full w-80 p-4 text-[#551447] bg-[#fee9e6]">
                 {/* Sidebar content here */}
                 <li>
                   <a>Home</a>

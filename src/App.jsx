@@ -8,18 +8,20 @@ import HomePagesArtical from './component/HomePages/HomePagesArtical'
 import HomePageProduct from './component/HomePages/HomePagesProduct'
 import HomePagesReview from './component/HomePages/HomePagesReview'
 import HomePagesFooter from './component/HomePages/HomePagesFooter'
+import ProductsLipstick from './component/Products/ProductsLipstick'
+import ProductForEyes from './component/Products/ProductForEyes'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <HomePagesNav></HomePagesNav>
+      
       <HomePagesHead></HomePagesHead>
       <HomePagesArtical></HomePagesArtical>
       <HomePageProduct ></HomePageProduct>
       <HomePagesReview></HomePagesReview>
-      <HomePagesFooter />
+
       
     </>
   )
