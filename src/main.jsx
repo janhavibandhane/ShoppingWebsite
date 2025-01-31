@@ -8,6 +8,7 @@ import ProductsLipstick from './component/Products/ProductsLipstick.jsx';
 import ProductForEyes from './component/Products/ProductForEyes.jsx';
 import ProductsBlush from './component/Products/ProductsBlush.jsx';
 import ProductBrushes from './component/Products/ProductsBrushes.jsx';
+import HomePagesAddedItem from './component/HomePages/HomePagesAddedItem.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/ProductForEyes" element={<ProductForEyes></ProductForEyes>}></Route>
         <Route path='/ProductsBlush' element={<ProductsBlush></ProductsBlush>}></Route>
         <Route path="/ProductBrushes" element={<ProductBrushes></ProductBrushes>}></Route>
+        <Route path='/AddedItem' element={<HomePagesAddedItem></HomePagesAddedItem>}></Route>
         </Route>
         
       </Routes>
