@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useCart } from "../Context/CartContext.jsx";
 import { FaShoppingCart, FaTrash } from "react-icons/fa";
 
@@ -5,16 +6,18 @@ function HomePagesAddedItem() {
   const { cart, removeFromCart } = useCart(); // Get cart from context
 
   return (
-    <div className="p-6 max-w-4xl mx-auto ">
-      <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-[#551447]">
-        <FaShoppingCart className="w-6 h-6 text-[#551447]" /> Items in Your Cart
+    <div className="bg-[#fee9e6] hero">
+    <div className="p-6 max-w-4xl mx-auto  ">
+      <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-[#551447] ">
+        🛒 Items in Your Cart
       </h2>
       {cart.length === 0 ? (
         <p className="text-[#834a76]">Your cart is empty</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {cart.map((item, index) => (
-            <div key={index} className="card bg-white shadow-lg rounded-lg overflow-hidden relative">
+            <>
+            <div className="card card-side bg-base-100 shadow-xl">
               <figure>
                 <img
                   src={item.imageSrc}
@@ -36,9 +39,18 @@ function HomePagesAddedItem() {
                 </button>
               </div>
             </div>
+            </>
           ))}
         </div>
       )}
+      {cart.length === 0 ? (
+        <p className=""></p>
+      ) : (
+        <div className=" flex justify-center items-center m-4">
+          <Link to={'/USerDetalis'}><button className="btn btn-wide bg-pink-600 hover:bg-pink-400">Checkout</button></Link>
+        </div>
+      )}
+    </div>
     </div>
   );
 }
