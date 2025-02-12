@@ -9,16 +9,14 @@ function HomePagesNav() {
       <div className="navbar sticky top-0 z-50  bg-[#e24298] text-white">
         {/* Logo */}
         <div className="flex-1">
-          <a className=" ">
-            <img src="https://typsybeauty.com/cdn/shop/files/new-logo-white-st_3_ba2111eb-d044-4682-ab21-3724d4106172.png?v=1723613891&width=210"></img>
-          </a>
+            <img src="https://typsybeauty.com/cdn/shop/files/new-logo-white-st_3_ba2111eb-d044-4682-ab21-3724d4106172.png?v=1723613891&width=210" className="md:w-auto w-[9rem]"></img>
         </div>
 
         {/* Options */}
         <div className="flex-none">
           <div className=" md:text-2xl md:block hidden lg:mr-[2rem] mr-[3rem]  font-Gupter">
             <div className=" flex  md:space-x-16">
-            <button>Home</button>
+            <Link to={"/"}><button>Home</button></Link>
             <button>Shop</button>
             <button>About</button>
             <button>Contacts</button>
@@ -34,7 +32,11 @@ function HomePagesNav() {
         <div className="md:hidden z-10 ">
           <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content">
+            <div className="drawer-content flex space-x-2">
+
+            <div className="">
+            <Link to={'/AddedItem'}><button className="mt-1 text-xl"><FaShoppingBag /></button></Link>
+            </div>
               {/* Page content here */}
               <label
                 htmlFor="my-drawer"
@@ -52,10 +54,16 @@ function HomePagesNav() {
               <ul className="menu font-Gupter text-2xl  min-h-full w-80 p-4 text-[#551447] bg-[#fee9e6]">
                 {/* Sidebar content here */}
                 <li>
-                  <a>Home</a>
+                <Link to={"/"}><button>Home</button></Link>
                 </li>
                 <li>
-                  <a>Sidebar Item 2</a>
+                  <a>Shop</a>
+                </li>
+                <li>
+                  <a>About Us</a>
+                </li>
+                <li>
+                  <a>Contact</a>
                 </li>
               </ul>
             </div>
