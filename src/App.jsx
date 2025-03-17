@@ -10,6 +10,8 @@ import HomePagesReview from './component/HomePages/HomePagesReview'
 import HomePagesFooter from './component/HomePages/HomePagesFooter'
 import ProductsLipstick from './component/Products/ProductsLipstick'
 import ProductForEyes from './component/Products/ProductForEyes'
+import HomePageAboutUs from './component/HomePages/HomePageAboutUs'
+import HomePagesContactUs from './component/HomePages/HomePagesContactUs'
 
 
 function App() {
@@ -32,7 +34,7 @@ function App() {
       <HomePagesArtical></HomePagesArtical>
       <HomePageProduct addToCart={addToCart} ></HomePageProduct>
       <HomePagesReview></HomePagesReview>
-
+<HomePagesContactUs />
       
     </>
   )

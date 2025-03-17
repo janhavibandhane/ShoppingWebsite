@@ -11,7 +11,8 @@ import ProductBrushes from './component/Products/ProductsBrushes.jsx';
 import HomePagesAddedItem from './component/HomePages/HomePagesAddedItem.jsx';
 import { CartProvider } from './component/Context/CartContext.jsx';
 import HomePagesUSerDetalis from './component/HomePages/HomePagesUserDetalis.jsx';
-
+import HomePageAboutUs from './component/HomePages/HomePageAboutUs.jsx';
+import HomePagesContactUs from './component/HomePages/HomePagesContactUs.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CartProvider>
@@ -25,6 +26,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/ProductBrushes" element={<ProductBrushes></ProductBrushes>}></Route>
         <Route path='/AddedItem' element={<HomePagesAddedItem></HomePagesAddedItem>}></Route>
         <Route path='/USerDetalis' element={<HomePagesUSerDetalis></HomePagesUSerDetalis>}></Route>
+        <Route path='/AboutUS' element={<HomePageAboutUs />}></Route>
+        <Route path='/Contact' element={<HomePagesContactUs />}></Route>
         </Route>
         
       </Routes>

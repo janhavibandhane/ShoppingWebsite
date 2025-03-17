@@ -18,8 +18,8 @@ function HomePagesNav() {
             <div className=" flex  md:space-x-16">
             <Link to={"/"}><button>Home</button></Link>
             <button>Shop</button>
-            <button>About</button>
-            <button>Contacts</button>
+            <Link to={"/AboutUS"}><button>About</button></Link>
+            <Link to={"/Contact"}><button>Contacts</button></Link>
             <div className=" space-x-5">
             <Link to={'/AddedItem'}><button className="mt-1"><FaShoppingBag /></button></Link>
             <button className="mt-1"><IoMdPerson /></button>
@@ -60,10 +60,10 @@ function HomePagesNav() {
                   <a>Shop</a>
                 </li>
                 <li>
-                  <a>About Us</a>
+                  <Link to={"AboutUS"}>About Us</Link>
                 </li>
                 <li>
-                  <a>Contact</a>
+                <Link to={"/Contact"}><button>Contacts</button></Link>
                 </li>
               </ul>
             </div>
